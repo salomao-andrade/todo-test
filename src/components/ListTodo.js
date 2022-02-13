@@ -2,8 +2,6 @@ import React from "react";
 import Todo from "./Todo";
 
 function ListTodo({dispatch, todoList}) {
-    console.log(todoList)
-
     return (
         <div>
             <h1>To-Do</h1>
