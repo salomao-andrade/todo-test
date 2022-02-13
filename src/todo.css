@@ -1,0 +1,8 @@
+.TodoItem {
+    background: #56ccff;
+    border: 1px solid black;
+}
+
+.TodoRemoveButon {
+    float: right;
+}
