@@ -6,8 +6,10 @@ function AddTodo({dispatch, todoList}) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        dispatch({type: ACTIONS.ADD_TODO, payload: todoTitle})
-        setTodoTitle('')
+        if (todoTitle) {
+            dispatch({type: ACTIONS.ADD_TODO, payload: todoTitle})
+            setTodoTitle('')
+        }
     }
 
     return (<div>
